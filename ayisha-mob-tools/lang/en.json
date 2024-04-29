@@ -1,0 +1,24 @@
+{
+	"MAT.name": "Ayisha's Mob Attack Tool",
+	"MAT.mobAttack": "Ayisha's Mob Attack Tool",
+	
+	"MAT.selectTokenWarning": "Ayisha says: You need to select one or more tokens!",
+
+	"SETTINGS.MAT.playerAccess": "Allow players to use Ayisha's Mob Attack Tool",
+	"SETTINGS.MAT.playerAccessHint": "If enabled, players will be able to see and use the Ayisha's Mob Attack Tool button.",
+
+	"MAT.toHit": "to hit",
+
+	"Weapons": "Weapons",
+	"Targets": "Targets",
+	"Group Initiative": "Group Initiative",
+	"Options": "Options",
+
+	"SETTINGS.MAT.defaultGroupName": "Default group name",
+	"SETTINGS.MAT.defaultGroupNameHint": "Choose what default text will appear for the group.",
+
+	"SETTINGS.MAT.GroupNo": "Group Number",
+	"SETTINGS.MAT.GroupNoHint": "Group Number"
+
+
+}

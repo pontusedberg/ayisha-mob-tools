@@ -1,0 +1,246 @@
+
+/* Actors */
+/*.actors{
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    border-radius: 5px; 
+}
+.actors + .actors {
+    margin-top: 10px;
+}
+.actor_img-label{
+    
+}
+.actor_img-icon{
+    height: 100px;
+    width: auto;
+}
+.actor_name-label{
+    
+}
+.actor_name-label-text{
+    
+}*/
+
+.actors {
+    /*display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;*/
+
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 30px 30px 70px 100px;
+    
+    border: 2px solid #ccc; 
+    padding: 10px;
+}
+
+.actor_num-container{
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 30px 30px;
+  
+}
+
+.actor_img-container{
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 30px 70px 100px;
+ 
+}
+
+.actors > * {
+   /* flex: content;
+    padding: 0 5px; */
+}
+
+
+/* Style for the image */
+.actor_img-icon {
+    max-width: 50px;
+}
+
+/* Optional: Add hover effect */
+.actors:hover {
+    background-color: #ddd;
+}
+
+.actor_name-label-text{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.actor_img-container{
+    /*display: flex;
+    align-items: center;*/
+}
+
+.weapon_sheet,
+.actor_sheet:hover {
+    cursor: pointer;
+}
+
+/* Weapons */
+
+
+.weapons {
+    /*display: flex; 
+    align-items: center; 
+    border: 2px solid #ccc; 
+    padding: 10px; 
+    border-radius: 5px; 
+    margin-bottom: 10px; */
+
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 30px 30px 50px 70px 70px 30px 120px;
+    border: 2px solid #ccc; 
+    padding: 10px;
+    column-gap: 1px; 
+    border: 2px solid #ccc; 
+    
+}
+
+.weapon_num-container{
+	display: grid;
+    grid-template-rows: 50px;
+	grid-template-columns: 30px;
+}
+
+.weapon_img-container{
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 30px 50px 70px 70px 30px 120px;
+     
+}
+
+.weapons > * {
+  /*  flex: 1; 
+    padding: 0 5px; 
+    border-right: 2px solid #ccc; */
+}
+
+/* Adjust styles for the last child element to remove the margin */
+.weapons > *:last-child {
+    /*border-right: none; */
+}   
+
+/* Style for the image */
+.weapon_img-icon {
+    max-width: 20px; 
+}
+
+/* Optional: Add hover effect */
+.weapons:hover {
+    background-color: #ddd;
+
+}
+.weapon_name-label-text {
+
+}
+
+.weapon_name-label-text:hover {
+
+}
+
+
+.weapons{
+    
+}
+.weapon_img-label{
+    
+}
+.weapon_img-icon{
+
+}
+.weapon_name{
+    
+}
+.weapon_name-label{
+    
+}
+.weapon_name-label-text{
+    
+}
+
+
+
+/* Nav menu */
+#dialog-tab{
+    
+}
+.dialog_tab{
+    
+}
+.nav_tab{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /*background-color: #f2f2f2;*/
+    display: flex;
+}
+.tab-tab{
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    display: inline-block;
+    border: 2px solid #ccc; /* Add border */
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+.tab-tab.active {
+    border-color: #cf4e4e; /* Change border color for active tab */
+}
+.tab-tab:hover {
+    background-color: #ddd;
+    border-color: #cf4e4e; /* Change border color on hover */
+}
+.weapons_tab{
+
+}
+.targets_tab{
+    
+}
+.group-initiative_tab{
+    
+}
+.options_tab{
+    
+}
+
+
+
+
+/* .actor_list {
+    display: flex;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+
+.actor_img-label,
+.actor_img-img {
+    max-width: 50px;
+    max-height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.actor_name {
+    width: 100%;
+    justify-content: center;
+}
+
+.actor_name a {
+    color: #333;
+    text-decoration: none;
+}
+
+.actor_list label:hover {
+    background-color: #f2f2f2;
+} 
+*/

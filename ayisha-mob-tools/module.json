@@ -1,0 +1,46 @@
+{
+  "id": "ayisha-mob-tools",
+  "title": "Ayisha's Module",
+  "description": "A practice module.",
+  "authors": [
+    {
+      "name": "AyishaNyx"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    }
+  ],
+  "url": "#",
+  "version": "0.1",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system"
+      }
+    ],
+    "requires": [
+      {
+        "id": "lib-wrapper",
+        "type": "module"
+      }
+    ]
+  },
+  "esmodules": [
+    "/scripts/ayisha-mob-tools.js"
+  ],
+  "styles": [
+    "/styles/ayisha-mob-tools.css"
+  ],
+  "manifest": "#",
+  "download": "#"
+}

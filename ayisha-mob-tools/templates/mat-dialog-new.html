@@ -1,0 +1,124 @@
+<div class="group_name">
+    <label class="group_name-label">
+        <a class="group_name-label-text" data-item-id="{{this.actorId}}" title="Open {{this.actorNameImg}} sheet">{{this.mobName}}</a>
+    </label>
+</div>
+
+{{#*inline "formatMonster"}}
+<div class="actors">
+
+	<div class="actor_num-container">
+		<label class="actor_num-label">
+			<input type="number" class="actor_num-input" title="Number of {{this.actorName}}"
+				name="{{this.actorId}}" width="10" min="1" value="{{this.amount}}" onClick="this.select();" />
+
+		</label>
+	</div>
+    <div class="actor_img-container">
+        <label class="actor_num-updown">
+            <a name="decreaseNumMonster" class="increaseNumMonster"><i class="fas fa-chevron-up"></i></a><br>
+            <a name="increaseNumMonster" class="decreaseNumMonster"><i class="fas fa-chevron-down"></i></a>
+        </label>
+        <label class="actor_img-label">
+            <img class="actor_img-icon actor_sheet" src="{{actorImg}}" data-item-id="{{this.actorId}}" title="Open {{this.actorNameImg}} sheet">
+        </label>
+        <label class="actor_name-label">
+            <a class="actor_name-label-text actor_sheet" data-item-id="{{this.actorId}}" title="Open {{this.actorNameImg}} sheet">{{this.actorName}}</a>
+        </label>
+    </div>
+
+
+</div>
+
+{{/inline}}
+
+
+
+{{#*inline "formatWeapon"}}
+
+
+
+
+    <div class="weapons">
+
+        <div class="weapon_num-container">
+            <label class="weapon_num-label">
+                <input type="number" class="weapon_num-input" title="Number of {{this.weaponId}}"
+                    name="{{this.weaponId}}" width="10" min="1" value="1" onClick="this.select();" />
+            </label>
+        </div>
+
+    
+
+        <div class="weapon_img-container">
+            <div class="weapon_num-updown">
+                <a name="decreaseNumMonster" class="increaseNumMonster"><i class="fas fa-chevron-up"></i></a><br>
+                <a name="increaseNumMonster" class="decreaseNumMonster"><i class="fas fa-chevron-down"></i></a>
+            </div>
+
+            <label class="weapon_img-label">
+                <img class="weapon_img-icon weapon_sheet" src="{{this.weaponImg}}" title="Open {{this.weaponNameImg}} sheet" data-item-id="{{this.weaponId}}">
+            </label>
+            <div class="weapon_name weapon_sheet" title="Open {{this.weaponName}} sheet" data-item-id="{{this.weaponId}}">
+                <a class="weapon_name-label weapon_sheet">
+                    <label class="weapon_name-label-text weapon_sheet" title="Open {{this.weaponName}} sheet">{{this.weaponName}}</label>
+                </a>
+            </div>
+            <div class="weapon_hit" data-item-id="{{this.weaponId}}">
+                <a class="weapon_hit-label">
+                    <label class="weapon_hit-label-text">{{this.weaponAttackBonus}} To-Hit</label>
+                </a>
+            </div>
+            <div class="weapon_range" data-item-id="{{this.weaponId}}">
+                <a class="weapon_range-label">
+                    <label class="weapon_range-label-text">{{this.weaponRange}}</label>
+                </a>
+            </div>
+            <div class="weapon_dmg" data-item-id="{{this.weaponId}}">
+                <a class="weapon_dmg-label">
+                    <label class="weapon_dmg-label-text">{{this.weaponDamageText}}</label>
+                </a>
+            </div>
+        </div>
+  
+    </div>
+
+
+
+        
+    
+
+
+
+{{/inline}}
+
+
+<form id="dialog-tab" class="dialog_tab" autocomplete="off">
+
+	<nav class="nav_tab">
+		<a class="tab-tab" data-tab="weapons"><i class="fas fa-crosshairs"></i> {{localize 'Weapons'}}</a>
+		<a class="tab-tab" data-tab="targets"><i class="fas fa-crosshairs"></i> {{localize 'Targets'}}</a>
+        <a class="tab-tab" data-tab="group-initiative"><i class="fas fa-crosshairs"></i> {{localize 'Group Initiative'}}</a>
+        <a class="tab-tab" data-tab="options"><i class="fas fa-crosshairs"></i> {{localize 'Options'}}</a>
+	</nav>
+
+	<section id="" class="">
+	
+			<div>
+                {{#each this.monsters}}
+				{{#with this}}
+				{{> formatMonster}}
+				{{/with}}
+
+                {{#each this.weapons}}
+                {{#with this}}
+                {{> formatWeapon}}
+                {{/with}}
+                {{/each}}
+
+                {{/each}}
+		    </div>
+		
+	</section>
+
+</form>
